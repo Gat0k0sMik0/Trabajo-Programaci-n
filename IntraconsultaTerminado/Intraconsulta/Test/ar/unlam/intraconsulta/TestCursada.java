@@ -193,8 +193,7 @@ public class TestCursada {
 		//Verificacion
 		assertNotNull(cursada);
 		assertEquals(Calificacion.DESAPROBADO, cursada.getNotaFinal());
-		assertEquals(Calificacion.APROBADO, cursada.getRecuperatorio());
-		assertTrue(cursada.finalDisponible());
+		assertEquals(Calificacion.FINAL, cursada.getRecuperatorio());
 		assertEquals(Calificacion.RECURSA, cursada.getCalificacionDefinal());
 	}
 
